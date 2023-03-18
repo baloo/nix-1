@@ -38,4 +38,5 @@ jobs:
 
         docker tag nix:$NIX_VERSION $IMAGE_ID:$NIX_VERSION
         docker tag nix:$NIX_VERSION $IMAGE_ID:master
-        docker push $IMAGE_ID:$NIX_VERSION $IMAGE_ID:master
+        docker push $IMAGE_ID:$NIX_VERSION
+        docker push $IMAGE_ID:master
